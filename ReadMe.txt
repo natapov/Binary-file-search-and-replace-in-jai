@@ -6,7 +6,7 @@ There is a confirmation dialog to make sure settings.txt was parsed correctly an
 
 Use those dialogs to make sure the program is in the right directory and won't do something you didn't intend!
 
-Backup files are saved in the same folder as the changed files, just remove "_backup" from the end of their name to restore. 
+Backup files are saved in the same folder as the changed files, just remove ".bak" from the end of their name to restore. 
 This program will not touch the backup files and won't backup again if a backup already exists.
 
 ********************
@@ -18,7 +18,7 @@ The first line should be a directory.
 
 The second line should be the name of the file you want to patch or, if you want to patch multiple files, some substrings that all their names contain (like ".exe" if you want to patch all .exe files in a folder). You can specify as many substrings as you like.
 
-Don't use quotes and seperate the substrings with one space.
+Don't use quotes and seperate the substrings with one space. They are case sensitive. 
 
 After that put the hex pattern you want to find and in the next line what you want to replace if with. Make sure to use a space every two letters like this:
 
